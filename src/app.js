@@ -15,7 +15,7 @@ export default (pl1, pl2) => {
                 
                 <div class="menu-game">
                     <div class="message"></div>    
-                    <div class="btnReload">
+                    <div class="btns">
                         <button class="btnReload">Reload</button>
                         <button class="btnExit">Exit</button>
                     </div>    
