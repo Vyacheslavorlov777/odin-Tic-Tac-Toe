@@ -2,7 +2,12 @@
 
 A browser-based Tic Tac Toe game built with HTML, CSS, and JavaScript as 
 part of The Odin Project's JavaScript course.
-[🔗 View Live](https://theamanali.github.io/tic-tac-toe/)
+
+ <br />
+    <a href="https://odin-tic-tac-toe-amber.vercel.app/">
+      <img src="./assets/img/readme/powered-by-vercel.svg"/>
+    </a>
+
 
 ## 🚀 How to play:
 
