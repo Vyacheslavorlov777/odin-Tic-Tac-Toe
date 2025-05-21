@@ -1,0 +1,262 @@
+@font-face {
+    font-family: "TicTac";
+    src: url(./assets/fonts/Indie_Flower/IndieFlower-Regular.ttf);
+}
+
+body {
+    background-image: url(./assets/img/4931029.jpg);
+    background-size: cover;
+    background-position: center;
+    font-family: "TicTac";
+    transition: 1s;
+}
+
+.logo {
+    text-align: center;
+    font-size: 60px;
+}
+
+
+/* menu */
+.menu-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu {
+    width: 70vw;
+    height: 50vh;
+    background-color: #0000003f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    border-radius: 55px;
+    transition: 1s;
+}
+
+.menu:hover {
+    box-shadow: 0 5px 15px 0 #70ecf7dd;
+}
+
+.player {
+    width: 250px;
+    height: 200px;
+    background-color: #ffffff8b;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    font-size: 45px;
+
+}
+
+label {
+    font-size: 30px;
+}
+
+input {
+    font-family: "TicTac";
+    width: 70%;
+    height: 15%;
+    border-radius: 25px;
+    text-align: center;
+    font-size: 1.5rem;
+    transition: 0.5s;
+}
+
+input:focus {
+    background-color: #ffffffd3;
+    box-shadow: 0 5px 15px 0 #70ecf7dd;
+}
+
+.btnPlay {
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    font-family: "TicTac";
+    font-size: 40px;
+    transition: 1s;
+}
+
+.btnPlay:hover {
+    transform: scale(1.1);
+    box-shadow: 0 5px 15px 0 #70ecf7dd;
+}
+
+.telega {
+    font-size: 45px;
+    padding-bottom: 20px;
+    transition: 1s;
+}
+
+.telega:hover {
+    transform: scale(1.2);
+}
+
+a {
+    color: #000000;
+    text-decoration: none;
+}
+
+
+/* game */
+
+.body-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px
+}
+
+
+.board {
+    background-color: #ffffff00;
+    width: 600px;
+    height: 600px;
+    display: grid;
+    grid-template-columns: repeat(3, 200px);
+    transition: 1s;
+}
+
+.board:hover {
+    box-shadow: 0 5px 15px 0 #70ecf7dd;
+}
+
+.field {
+    background-color: #d4d4d476;
+    width: 200px;
+    height: 200px;
+    border: 0.4px solid rgba(86, 255, 249, 0.211);
+    transition: 0.5s;
+    text-align: center;
+    
+    font-size: 155px;
+}
+
+.field:hover {
+    box-shadow: 0 5px 15px 0 #7082f7dd;
+}
+
+.btnReload {
+    width: 200px;
+    height: 40px;
+    border-radius: 100px;
+    font-family: "TicTac";
+    font-size: 30px;
+    transition: 1s;
+}
+
+.btnReload:hover {
+    box-shadow: 0 5px 15px 0 #7082f7dd;
+}
+
+.btnExit {
+    width: 200px;
+    height: 40px;
+    border-radius: 100px;
+    font-family: "TicTac";
+    font-size: 30px;
+    transition: 1s;
+}
+
+.btnExit:hover {
+    box-shadow: 0 5px 15px 0 #57e6ffdd;
+}
+
+
+/* modal wind */
+
+body {
+    overflow-x: hidden;
+}
+
+.modalBackground {
+    display: none;
+    background: rgba(59, 38, 38, 0);
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.modalActive {
+    position: absolute;
+    width: 450px;
+    height: 50px;
+    top: -50vh;
+    left: 35%;
+    border-radius: 10px;
+    background-color: #4f4f4f00;
+    background-size: 650px 350px;
+    background-position: 45% 15%;
+    cursor: default;
+    padding: 40px 20px;
+    border: 2px solid #00ffead3;
+    box-shadow: 0px 0px 35px #3fe2fe;
+    animation: Wrapper 1.5s;
+}
+
+@keyframes Wrapper{
+  0%{
+    transform: translateY(-1500px);
+  }
+  75%{
+    transform: translateY(13px);
+  }
+
+  100%{
+    transform: translateY(0px);
+  }
+}
+
+.modalClose {
+    font-family: var(--font-regular);
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 25px;
+}
+
+.modalClose img {
+    margin: 3px;
+    width: 24px;
+    height: 24px;
+    transition: 1s;
+}
+
+.modalClose:hover {
+    box-shadow: 0px 0px 35px #000000;
+}
+
+.modalWindow {
+    width: 430px;
+    height: 45px;
+    color: #60e2ff;
+    text-shadow: 0px 0px 20px #02aad0;
+    position: relative;
+    font-size: 2rem;
+    text-align: center;
+    border-radius: 25px;
+    background-color: rgba(50, 47, 47, 0.6);
+    box-shadow: 0px 0px 35px #3fe2fe;
+}
