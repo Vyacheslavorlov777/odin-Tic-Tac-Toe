@@ -5,7 +5,7 @@ export default () => {
 
     body.innerHTML = `
         <div class="menu-container">
-            <div class="logo">Odin Tic Tac Toe</div>
+            <div class="logo">Tic Tac Toe</div>
 
             <div class="menu">
                 <div class="player">

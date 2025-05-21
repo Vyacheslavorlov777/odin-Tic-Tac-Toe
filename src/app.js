@@ -5,7 +5,7 @@ export default (pl1, pl2) => {
 
     body.innerHTML = `
             <div class="body-container">
-                <div class="logo">Odin Tic Tac Toe</div>
+                <div class="logo">Tic Tac Toe</div>
 
                 <div class="main">
                     <div class="player">${pl1}</div>
@@ -31,7 +31,7 @@ export default (pl1, pl2) => {
                 </div>
             </div>`;
         
-        body.style.backgroundImage = `url(./assets/img/5968949.jpg)`
+        body.style.backgroundImage = `url(./assets/img/6047710.jpg)`
 
     let board = ['', '', '', '', '', '', '', '', ''];
     let currentPlayer = 'X'; 

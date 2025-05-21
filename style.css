@@ -13,7 +13,8 @@ body {
 
 .logo {
     text-align: center;
-    font-size: 60px;
+    padding-top: 10vh;
+    font-size: 80px;
 }
 
 
@@ -45,7 +46,7 @@ body {
 .player {
     width: 250px;
     height: 200px;
-    background-color: #ffffff8b;
+    background-color: #3b3b3b39;
     border: 1px solid rgb(0, 0, 0);
     border-radius: 25px;
     display: flex;
@@ -91,13 +92,13 @@ input:focus {
 }
 
 .telega {
-    font-size: 45px;
+    font-size: 25px;
     padding-bottom: 20px;
     transition: 1s;
 }
 
 .telega:hover {
-    transform: scale(1.2);
+    transform: scale(1.8);
 }
 
 a {
